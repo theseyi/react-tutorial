@@ -27,6 +27,7 @@
   "homepage": "https://github.com/theseyi/react-webpack",
   "devDependencies": {
     "body-parser": "^1.11.0",
+    "compression": "^1.4.0",
     "css-loader": "^0.9.1",
     "express": "^4.11.2",
     "jsx-loader": "^0.12.2",

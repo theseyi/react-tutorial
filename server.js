@@ -2,6 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
+var compression = require('compression');
 
 var app = express();
 var cors = function (req, res, next) {
@@ -11,6 +12,7 @@ var cors = function (req, res, next) {
   next();
 };
 
+app.use(compression());
 app.use('/', express.static(path.join(__dirname, '/static')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({

@@ -19,6 +19,7 @@ This will install
 - showdown
 - express
  - bodyParser
+ - compression
 
 `$ npm start`
 
