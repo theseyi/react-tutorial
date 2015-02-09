@@ -20,13 +20,13 @@ This will install
 - express
  - bodyParser
 
-`node server.js`
+`$ npm start`
+
+Start Webpack in watch mode with progress and colors, "prettify's" the output, nice for large projects.
+
+`$ node server.js`
 
 Launch the application using a light-weight express instance on port:3000.
 Go to: [http://localhost:3000](http://localhost:3000)
 
 In another terminal window let Webpack auto compile on your changes:
-
-`$ npm start`
-
-Start Webpack in watch mode with progress and colors, "prettify's" the output, nice for large projects.
