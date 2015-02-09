@@ -1,17 +1,16 @@
 module.exports = {
   entry: './src/entry.js',
   output: {
-    path: 'bundle',
+    path: 'static/bundle',
     filename: 'app.js'
   },
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.js(?:x)?$/,
       loader: 'jsx-loader'
     }, {
       test: /\.css$/,
       loader: 'style!css'
-    }
-    ]
+    }]
   }
-}
+};
