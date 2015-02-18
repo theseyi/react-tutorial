@@ -1,7 +1,7 @@
 {
-  "name": "react-browserify",
+  "name": "react-tutorial",
   "version": "1.0.0",
-  "description": "npm package dependencies for using react with browserify",
+  "description": "npm package dependencies for using react with webpack",
   "main": "app.js",
   "scripts": {
     "start": "webpack --colors --progress --watch",

@@ -5,11 +5,10 @@ var bodyParser = require('body-parser');
 var compression = require('compression');
 
 var app = express();
-var cors = function (req, res, next) {
+var cors = function (req, res) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,POST');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
 };
 
 app.use(compression());
@@ -21,7 +20,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(function (req, res, next) {
   console.log('Time: %d', Date.now());
-  cors(req, res, next);
+  cors(req, res);
+  next();
 });
 
 app.get('/comments', function (req, res) {
