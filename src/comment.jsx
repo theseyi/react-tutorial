@@ -6,13 +6,13 @@ define(['react', 'showdown'], function (React, Showdown) {
       var html = converter.makeHtml(this.props.children.toString());
 
       return (
-        <div className='comment'>
-          <h2 className='commentAuthor'>
-            {this.props.author}
-          </h2>
-          <span dangerouslySetInnerHTML = {{__html: html}} />
-        </div>
+          <div className='comment'>
+            <h2 className='commentAuthor'>
+              {this.props.author}
+            </h2>
+            <span dangerouslySetInnerHTML={{__html: html}}/>
+          </div>
       );
     }
   })
-})
+});

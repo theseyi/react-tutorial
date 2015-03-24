@@ -1,10 +1,10 @@
-var fs = require('fs');
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
+var fs          = require('fs');
+var path        = require('path');
+var express     = require('express');
+var bodyParser  = require('body-parser');
 var compression = require('compression');
 
-var app = express();
+var app  = express();
 var cors = function (req, res) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,POST');
